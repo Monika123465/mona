@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+    
+      <select id="continent">
+        <option value="India">India</option>
+        <option value="United States of America">United States of America</ption>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="france">france</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="canada">canada</option>
+        <option value="singapore">singapore</option>
+        <option value="sweden">sweden</option>
+      </select>
+
+      
+            <button id="button">find continent</button>
+    
+</body>
+</html>
+<script>
+    let name= document.querySelector("#continent")
+    let button=document.querySelector("#button")
+    button.addEventListener("click",myfunction)
+    let obj={
+        India:"Asia",
+       "United States of America":"",
+            China:"Asia",
+            Nepal:"Asia",
+            Australia:"North America",
+            france:"Europe",
+            Germany:"Europe",
+            "South Africa":"Africa",
+            Nigeria:"Africa",
+              Mexico:"North america",
+              Argentina:"South america",
+              Brazil:"South america",
+              canada:"North america",
+              singapore:"Asia",
+              sweden:"Europe",
+
+
+    }
+        function myfunction(){
+              let country=name.value
+              alert (obj[country])
+     
+}
+
+
+    
+
+</script>
